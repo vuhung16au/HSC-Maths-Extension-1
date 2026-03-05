@@ -1,0 +1,23 @@
+\subsection{Problem 34: Integration with Recurrence and Factorial Inequality}
+
+\begin{problem}
+Let $I_n = \int_{0}^{\frac{\pi}{2}} \sin^{2n+1}(2\theta) \, d\theta$, $n = 0, 1, \dots$.
+
+\begin{enumerate}
+    \item[(i)] Prove that $I_n = \frac{2n}{2n+1}I_{n-1}$, $n \ge 1$.
+    
+    \item[(ii)] Deduce that $I_n = \frac{2^{2n}(n!)^2}{(2n+1)!}$.
+    
+    \item[(iii)] Let $J_n = \int_{0}^{1} x^n (1-x)^n \, dx$, $n = 0, 1, 2, \dots$. Using the result of part (ii), or otherwise, show that
+    \[
+    J_n = \frac{(n!)^2}{(2n+1)!}.
+    \]
+    
+    \item[(iv)] Prove that $(2^n n!)^2 \le (2n+1)!$.
+\end{enumerate}
+\end{problem}
+
+\begin{hint}
+For part (i), use integration by parts. For part (ii), use the recurrence and find $I_0$. For part (iii), use substitution $x = \sin^2\theta$ to relate $J_n$ to $I_n$. For part (iv), use the fact that $J_n \le 1$ (since the integrand is bounded by 1 on $[0,1]$).
+\end{hint}
+

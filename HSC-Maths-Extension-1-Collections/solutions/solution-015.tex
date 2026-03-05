@@ -1,0 +1,21 @@
+\subsection{Solution to Problem 15: Integer Equation with Large Exponents}
+
+\begin{solution}
+	extbf{Parity-only argument (no modular arithmetic).} Consider even and odd values of $n$.
+
+If $n$ is even, then $n+1$ is odd, so $(n+1)^{41}$ is odd; $n^{40}$ is even, so $79n^{40}$ is even; odd minus even is odd.
+
+If $n$ is odd, then $n+1$ is even, so $(n+1)^{41}$ is even; $n^{40}$ is odd, so $79n^{40}$ is odd; even minus odd is odd.
+
+Thus the left-hand side is always odd, while the right-hand side $2$ is even. An odd number cannot equal an even number, so there is no integer $n$ satisfying the equation.
+
+	extit{Note.} Modular arithmetic is not in the syllabus, but it is a useful tool. For completeness, here is the same contradiction phrased with mod 2: in both parity cases above, $(n+1)^{41} - 79n^{40} \equiv 1 \pmod{2}$, whereas $2 \equiv 0 \pmod{2}$.
+\end{solution}
+
+\begin{takeaways}
+\begin{itemize}
+    \item Parity alone shows the left side is always odd while 2 is even, so no solution
+    \item Thinking in modulo 2 language is optional here but helpful to know for later
+\end{itemize}
+\end{takeaways}
+

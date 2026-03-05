@@ -1,0 +1,66 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build LaTeX PDF",
+			"type": "shell",
+			"command": "make",
+			"args": [
+				"pdf"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Rebuild LaTeX PDF",
+			"type": "shell",
+			"command": "make",
+			"args": [
+				"pdf"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Rerun LaTeX to clear refs",
+			"type": "shell",
+			"command": "make",
+			"args": [
+				"pdf"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Rerun LaTeX after Makefile fix",
+			"type": "shell",
+			"command": "make",
+			"args": [
+				"pdf"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run make pdf final",
+			"type": "shell",
+			"command": "make",
+			"args": [
+				"pdf"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

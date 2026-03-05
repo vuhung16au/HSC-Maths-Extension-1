@@ -1,0 +1,27 @@
+\subsection{Problem 17: Integration with Recurrence Relations}
+
+\begin{problem}
+\begin{enumerate}
+    \item[(i)] Let
+    \[
+    J_{n}=\int_{0}^{\frac{\pi}{2}}\sin^{n}\theta \, d\theta
+    \]
+    where $n \ge 0$ is an integer. Show that $J_{n}=\frac{n-1}{n}J_{n-2}$ for all integers $n \ge 2$.
+    
+    \item[(ii)] Let
+    \[
+    I_{n}=\int_{0}^{1}x^{n}(1-x)^{n}dx
+    \]
+    where $n$ is a positive integer. By using the substitution $x=\sin^{2}\theta$, or otherwise, show that
+    \[
+    I_{n}=\frac{1}{2^{2n}}\int_{0}^{\frac{\pi}{2}}\sin^{2n+1}\theta \, d\theta.
+    \]
+    
+    \item[(iii)] Hence, or otherwise, show that $I_{n}=\frac{n}{4n+2}I_{n-1}$, for all integers $n \ge 1$.
+\end{enumerate}
+\end{problem}
+
+\begin{hint}
+For part (i), use integration by parts with $u = \sin^{n-1}\theta$ and $dv = \sin\theta \, d\theta$. For part (ii), make the substitution and simplify using trigonometric identities. For part (iii), combine the results from parts (i) and (ii).
+\end{hint}
+
